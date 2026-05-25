@@ -4,11 +4,48 @@
 <title>Retetele Dianei</title>
 <link rel="icon" type="image/x-icon" href="potato.png">
 </head>
+<style>
+button{
+    padding: 10px;
+    background-color: chocolate;
+    color: white;
+    border: none;
+}
+@media screen and (max-width: 1000px){
+    body{
+        background-color: white;
+    }
+}
+@media screen and (max-width: 700px){
+    body{
+        background-color: white;
+    }
+    h1{
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 500px){
+    body{
+        background-color: white;
+    }
+    h1{
+        font-size: 26px;
+    }
+}
+.dark{
+    background-color: #222;
+    color: white;
+}
+.dark h1,
+.dark h2{
+    color: black;
+}
+</style>
 <body>
 
 <div style="display: flex; align-items: center;">
     <img src="./potato.png" alt="imagine cu un cartof" width="10%" height="15%" title="cartof">
-    <a href="proiect.html" style="text-decoration: none;"><h1 style="color: crimson; margin: 2%; font-size: 6vw; white-space: nowrap;" >Retetele Dianei</h1></a></div>
+    <a href="https://diana15m.github.io/retete/" style="text-decoration: none;"><h1 style="color: crimson; margin: 2%; font-size: 6vw; white-space: nowrap;" >Retetele Dianei</h1></a></div>
 
 <hr>
 
@@ -16,11 +53,13 @@
     <a style="text-decoration: none; color: black;" href="toate.html"><h2 style="font-size: 3.4vw; margin: 0;">TOATE</h2></a>
     <a style="text-decoration: none; color: black;" href="supe.html"><h2 style="font-size: 3.4vw; margin: 0;">SUPE</h2></a>
     <a style="text-decoration: none; color: black;" href="https://savoriurbane.com/"><h2 style="font-size: 3.4vw; margin: 0;">MAIN DISHES</h2></a>
-    <a style="text-decoration: none; color: black;" href="https://savoriurbane.com/"><h2 style="font-size: 3.4vw; margin: 0;">DESERTURI</h2></a>
+    <a style="text-decoration: none; color: black;" href="deserturi.html"><h2 style="font-size: 3.4vw; margin: 0;">DESERTURI</h2></a>
     <a style="text-decoration: none; color: black;" href="https://savoriurbane.com/"><h2 style="font-size: 3.4vw; margin: 0;">ALTELE</h2></a>
 </div>
 
 <hr>
+
+<button onclick="tema()">Dark / Light mode</button>
 
 <h1 style="color: chocolate; text-align: center; font-size: 6vw;">Supe</h1>
 
@@ -44,6 +83,12 @@
 
 <p>Toate retetele sunt luate si mai apoi prelucrate de pe <a target="_blank" href="https://savoriurbane.com/" style="color: chocolate;">savori urbane</a>.</p>
 <address>Moldovan Diana<br>Cluj-Napoca, Romania<br><a href="mailto:ddianamoldovan@gmail.com">trimite mail</a></address>
+
+<script>
+function tema(){
+    document.body.classList.toggle("dark");
+}
+</script>
 
 </body>
 </html>
